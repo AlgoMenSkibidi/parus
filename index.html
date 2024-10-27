@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParusAntiVirus</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .headerr {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #f0f0f0;
+        }
+        .header img {
+            width: 18px;
+            height: 18px;
+        }
+        .header .title {
+            margin-left: 10px;
+            font-size: 18px;
+        }
+        .banner {
+            position: relative;
+            text-align: center;
+            padding: 50px;
+            background: url('https://avatars.mds.yandex.net/i?id=c03638853b80c24d82c34a9f6d3d4ed6_l-8239632-images-thumbs&n=13') no-repeat center center;
+            background-size: cover;
+            color: white;
+        }
+        .banner .content {
+            position: relative;
+            display: inline-block;
+        }
+        .banner .content img {
+            width: 18px;
+            height: 18px;
+            vertical-align: middle;
+            margin-left: 10px;
+        }
+        .banner h1 {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+        .banner p {
+            font-size: 16px;
+        }
+        .hiddenn-textr {
+            display: none;
+            text-align: left;
+            margin-left: 10px; /* Добавил отступ слева */
+        }
+    </style>
+    <title>Select Element</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #001f3f;
+            color: white;
+            height: 100vh;
+        
+        }
+
+        .select-container {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .select-container select {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ffffff;
+           background-color: #001f3f;
+            color: rgb(255, 255, 255);
+        }
+
+        .hidden-text {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #001f3f;
+            color: rgb(255, 255, 255);
+            animation: slideDown 0.3s forwards;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .side-image {
+            position: fixed;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%) rotate(-90deg);
+            width: 100px;
+        }
+    </style>
+    
+    <title>Ваш сайт</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #001f3f;
+            color: white;
+            height: 100vh;
+            
+        }
+
+        .select-container {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .select-container select {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            color: black;
+        }
+
+        .hidden-text {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            color: black;
+            animation: slideDown 0.3s forwards;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .side-image {
+            position: fixed;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%) rotate(-90deg);
+            width: 100px;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #001f3f;
+            color: white;
+            padding: 20px;
+            border-top: 1px solid #888;
+            box-sizing: border-box;
+        }
+
+        .modal p {
+            margin: 0;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .small-text {
+            font-size: 12px;
+            color: #bbb;
+        }
+    </style>
+     
+   
+</style>
+        
+
+       
+    </style>
+</style>
+</head>
+<body> 
+<div class="header">
+    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/3eb88427204925.563614d45cf4d.png" alt="logo">
+    <div class="title">ParusAntiVirus</div>
+</div>
+
+<div class="banner">
+    <div class="content">
+        <h1>Троян точно не проскочет!</h1>
+        <p>ParusAntiVirus обновлен до версии 0.35.678.0</p>
+        <img src="https://avatars.mds.yandex.net/i?id=2831d68fab508d700d32310f961a17e3_l-4257007-images-thumbs&n=13" alt="more info" onclick="toggleText()">
+    </div>
+</div>
+
+<div class="hiddenn-textr">
+    <p>Троян? Забудь про него с помощью ParusAntivirus.
+        ParusAntiVirus 0.35.678.0 - это новая версия антивирусного программного обеспечения, которая заявляет о впечатляющем достижении в области борьбы с троянами и другими вредоносными программами. Главной особенностью этой версии является полное уничтожение троянских вирусов, обеспечивающее надежную защиту вашего компьютера от вредоносных атак.
+
+ParusAntiVirus 0.35.678.0 предлагает расширенный набор инструментов и технологий, способных обнаруживать и удалять даже самые сложные и хитроумные троянские вирусы. Благодаря постоянному обновлению базы данных и интеллектуальным алгоритмам сканирования, этот антивирус обеспечивает высокую степень защиты от вредоносных угроз.
+
+С ParusAntiVirus 0.35.678.0 ваш компьютер будет защищен от троянских вирусов, которые могут украсть ваши личные данные, вредить системе и замедлять работу компьютера. Надежная защита и высокая эффективность делают этот антивирус идеальным выбором для обеспечения безопасности вашего компьютера.
+    </p>
+</div>
+
+<div class="select-container">
+    <select id="info-select" onchange="showText()">
+        <option value="">--Выберите раздел--</option>
+        <option value="about-us">О нас</option>
+        <option value="usage-tips">Советы по использованию</option>
+        <option value="product-info">О продукте</option>
+        <option value="why-choose-us">Почему выбрать нас?</option>
+        <option value="support">Техподдержка</option>
+    </select>
+</div>
+
+<div id="about-us" class="hidden-text">ParusTeam - команда профессионалов, специализирующихся на создании программного обеспечения. Мы разрабатываем высококачественные антивирусные решения, которые защищают ваши устройства и данные от вредоносных угроз. Наша цель - обеспечить максимальную безопасность в онлайн-мире для наших пользователей. С нами ваша информация в надежных руках!</div>
+<div id="usage-tips" class="hidden-text"> 1. Регулярно обновляйте базы и сканируйте систему.
+    2. Запланируйте автоматические обновления и сканирования.
+    3. Следуйте рекомендациям антивируса и обращайтесь за помощью.
+    4. Обеспечьте безопасность с помощью ParusAntiVirus.</div>
+<div id="product-info" class="hidden-text">Наш антивирус предлагает широкий спектр функций, которые обеспечивают надежную защиту вашего устройства от вредоносных программ. Наш продукт постоянно обновляется, чтобы обнаруживать и блокировать новые угрозы. Кроме того, мы предлагаем удобный интерфейс, высокую скорость сканирования и низкую нагрузку на систему. Выбирая наш антивирус, вы можете быть уверены в безопасности ваших данных и личной информации. </div>
+<div id="why-choose-us" class="hidden-text">Наш антивирус - надежная защита от вредоносных программ, обновления и быстрое реагирование на новые угрозы.Сложный интерфейс делает использование не удобным для всех пользователей. Ваши данные и личная информация НЕ под надежной защитой.</div>
+<div id="support" class="hidden-text">Команда техподдержки ParusTeam всегда на связи, чтобы помочь вам решить любые вопросы и проблемы, связанные с нашим антивирусным программным обеспечением. Посетите наш сайт техподдержки parus.antivirus.support, где вы можете получить быструю и квалифицированную помощь от наших специалистов. Наша цель - обеспечить удовлетворение и комфорт для каждого клиента. Ваша безопасность и удовлетворенность нашим приоритетом!</div>
+
+
+
+<script>
+function showText() {
+    var select = document.getElementById("info-select");
+    var value = select.value;
+
+    var texts = document.getElementsByClassName("hidden-text");
+    for (var i = 0; i < texts.length; i++) {
+        texts[i].style.display = "none";
+    }
+
+    if (value) {
+        var text = document.getElementById(value);
+        text.style.display = "block";
+    }
+}
+</script>
+
+<div style="margin-top: 20px;">
+    <span>Будь умнее, используй ParusAntiVirus Plus</span>
+    <img src="https://cdn.discordapp.com/attachments/1271858119814811782/1298982178360918026/close_1_-removebg-preview_1.png?ex=671b8aed&is=671a396d&hm=16019ad99702c8dbe5b6363ab6c5a0ee567a1d533b0ed3cd8224b0caef9a0438&" alt="toggle table" onclick="toggleTable()" style="cursor: pointer; vertical-align: middle; margin-left: 10px; width: 14px;">
+</div>
+
+<div id="comparisonTable" style="display: none; margin-top: 20px; padding: 10px; border: 1px solid #ccc; background-color: #ADD8E6; color: black;">
+    <table style="width: 100%; border-collapse: collapse;">
+        <tr>
+            <th style="width: 33%; text-align: left;">С обычной подпиской</th>
+            <th style="width: 33%; text-align: left;">С подпиской ParusAntiVitus Plus</th>
+            <th style="width: 34%; text-align: left;">Функционал</th>
+        </tr>
+        <tr>
+            <td style="padding: 5px;"><img src="https://cdn.discordapp.com/attachments/1271858119814811782/1298982178360918026/close_1_-removebg-preview_1.png?ex=671b8aed&is=671a396d&hm=16019ad99702c8dbe5b6363ab6c5a0ee567a1d533b0ed3cd8224b0caef9a0438&" alt="cross" style="width: 14px;"></td>
+            <td style="padding: 5px;"><img src="https://static.tildacdn.com/tild6263-6636-4835-b731-326263643736/check-mark-png-black.png" alt="check" style="width: 14px;"></td>
+            <td style="padding: 5px;">Автоматическое обновление антивирусных баз.</td>
+        </tr>
+        <tr>
+            <td style="padding: 5px;"><img src="https://cdn.discordapp.com/attachments/1271858119814811782/1298982178360918026/close_1_-removebg-preview_1.png?ex=671b8aed&is=671a396d&hm=16019ad99702c8dbe5b6363ab6c5a0ee567a1d533b0ed3cd8224b0caef9a0438&" alt="cross" style="width: 14px;"></td>
+            <td style="padding: 5px;"><img src="https://static.tildacdn.com/tild6263-6636-4835-b731-326263643736/check-mark-png-black.png" alt="check" style="width: 14px;"></td>
+            <td style="padding: 5px;">Режим реального времени для защиты от угроз.</td>
+        </tr>
+        <td style="padding: 5px;"><img src="https://cdn.discordapp.com/attachments/1271858119814811782/1298982178360918026/close_1_-removebg-preview_1.png?ex=671b8aed&is=671a396d&hm=16019ad99702c8dbe5b6363ab6c5a0ee567a1d533b0ed3cd8224b0caef9a0438&" alt="cross" style="width: 14px;"></td>
+            <td style="padding: 5px;"><img src="https://static.tildacdn.com/tild6263-6636-4835-b731-326263643736/check-mark-png-black.png" alt="check" style="width: 14px;"></td>
+            <td style="padding: 5px;">Расширенная защита интернет-сёрфинга.</td>
+        </tr>
+        <tr>
+            <td style="padding: 5px;"><img src="https://cdn.discordapp.com/attachments/1271858119814811782/1298982178360918026/close_1_-removebg-preview_1.png?ex=671b8aed&is=671a396d&hm=16019ad99702c8dbe5b6363ab6c5a0ee567a1d533b0ed3cd8224b0caef9a0438&" alt="cross" style="width: 14px;"></td>
+            <td style="padding: 5px;"><img src="https://static.tildacdn.com/tild6263-6636-4835-b731-326263643736/check-mark-png-black.png" alt="check" style="width: 14px;"></td>
+            <td style="padding: 5px;">Сканирование и очистка системы от шпионского ПО.</td>
+        </tr>
+        <tr>
+            <td style="padding: 5px;"><img src="https://cdn.discordapp.com/attachments/1271858119814811782/1298982178360918026/close_1_-removebg-preview_1.png?ex=671b8aed&is=671a396d&hm=16019ad99702c8dbe5b6363ab6c5a0ee567a1d533b0ed3cd8224b0caef9a0438&" alt="cross" style="width: 14px;"></td>
+            <td style="padding: 5px;"><img src="https://static.tildacdn.com/tild6263-6636-4835-b731-326263643736/check-mark-png-black.png" alt="check" style="width: 14px;"></td>
+            <td style="padding: 5px;">Поддержка 24/7 от команды специалистов.</td>
+        </tr>
+        <tr>
+            <td style="padding: 5px;"><img src="https://cdn.discordapp.com/attachments/1271858119814811782/1298982178360918026/close_1_-removebg-preview_1.png?ex=671b8aed&is=671a396d&hm=16019ad99702c8dbe5b6363ab6c5a0ee567a1d533b0ed3cd8224b0caef9a0438&" alt="cross" style="width: 14px;"></td>
+            <td style="padding: 5px;"><img src="https://static.tildacdn.com/tild6263-6636-4835-b731-326263643736/check-mark-png-black.png" alt="check" style="width: 14px;"></td>
+            <td style="padding: 5px;">Снижение нагрузки на систему при выполнении сканирования.</td>
+        </tr>
+        <td style="padding: 5px;"><img src="https://cdn.discordapp.com/attachments/1271858119814811782/1298982178360918026/close_1_-removebg-preview_1.png?ex=671b8aed&is=671a396d&hm=16019ad99702c8dbe5b6363ab6c5a0ee567a1d533b0ed3cd8224b0caef9a0438&" alt="cross" style="width: 14px;"></td>
+            <td style="padding: 5px;"><img src="https://static.tildacdn.com/tild6263-6636-4835-b731-326263643736/check-mark-png-black.png" alt="check" style="width: 14px;"></td>
+            <td style="padding: 5px;">Защита онлайн-платежей и финансовых данных.</td>
+        </tr>
+        <tr>..
+            <td style="padding: 5px;"><img src="https://cdn.discordapp.com/attachments/1271858119814811782/1298982178360918026/close_1_-removebg-preview_1.png?ex=671b8aed&is=671a396d&hm=16019ad99702c8dbe5b6363ab6c5a0ee567a1d533b0ed3cd8224b0caef9a0438&" alt="cross" style="width: 14px;"></td>
+            <td style="padding: 5px;"><img src="https://static.tildacdn.com/tild6263-6636-4835-b731-326263643736/check-mark-png-black.png" alt="check" style="width: 14px;"></td>
+            <td style="padding: 5px;">Защита онлайн-платежей и финансовых данных.</td>
+        </tr>
+        <tr>
+            <td style="padding: 5px;"><img src="https://cdn.discordapp.com/attachments/1271858119814811782/1298982178360918026/close_1_-removebg-preview_1.png?ex=671b8aed&is=671a396d&hm=16019ad99702c8dbe5b6363ab6c5a0ee567a1d533b0ed3cd8224b0caef9a0438&" alt="cross" style="width: 14px;"></td>
+            <td style="padding: 5px;"><img src="https://static.tildacdn.com/tild6263-6636-4835-b731-326263643736/check-mark-png-black.png" alt="check" style="width: 14px;"></td>
+            <td style="padding: 5px;">Еженедельные отчеты о состоянии безопасности устройства.</td>
+        </tr>
+        <tr>
+            <td style="padding: 5px;"><img src="https://cdn.discordapp.com/attachments/1271858119814811782/1298982178360918026/close_1_-removebg-preview_1.png?ex=671b8aed&is=671a396d&hm=16019ad99702c8dbe5b6363ab6c5a0ee567a1d533b0ed3cd8224b0caef9a0438&" alt="cross" style="width: 14px;"></td>
+            <td style="padding: 5px;"><img src="https://static.tildacdn.com/tild6263-6636-4835-b731-326263643736/check-mark-png-black.png" alt="check" style="width: 14px;"></td>
+            <td style="padding: 5px;">Защита от фишинговых атак и вредоносных сайтов.</td>
+        </tr>
+        <tr>
+            <td style="padding: 5px;"><img src="https://cdn.discordapp.com/attachments/1271858119814811782/1298982178360918026/close_1_-removebg-preview_1.png?ex=671b8aed&is=671a396d&hm=16019ad99702c8dbe5b6363ab6c5a0ee567a1d533b0ed3cd8224b0caef9a0438&" alt="cross" style="width: 14px;"></td>
+            <td style="padding: 5px;"><img src="https://static.tildacdn.com/tild6263-6636-4835-b731-326263643736/check-mark-png-black.png" alt="check" style="width: 14px;"></td>
+            <td style="padding: 5px;">Поддержка авторов проекта.</td>
+        </tr>
+        
+    </table>
+</div>
+
+
+
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <p>ParusAntiVirus использует файлы Cookie для обработки данных. Не бойтесь, это совсем безопасно.</p>
+    <p class="small-text">(Потом мы их украдём. Мухаххах.)</p>
+</div>
+
+<script>
+function showText() {
+    var select = document.getElementById("info-select");
+    var value = select.value;
+
+    var texts = document.getElementsByClassName("hidden-text");
+    for (var i = 0; i < texts.length; i++) {
+        texts[i].style.display = "none";
+    }
+
+    if (value) {
+        var text = document.getElementById(value);
+        text.style.display = "block";
+    }
+}
+
+function openModal() {
+    document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+}
+
+// Open modal on page load
+window.onload = function() {
+    openModal();
+}
+
+
+
+</script>
+
+<script>
+    function toggleTable() {
+        var table = document.getElementById("comparisonTable");
+        if (table.style.display === "none" || table.style.display === "") {
+            table.style.display = "block";
+            table.style.animation = "slideDown 0.3s forwards";
+        } else {
+            table.style.display = "none";
+            table.style.animation = "slideUp 0.3s forwards";
+        }
+    }
+    
+    var style = document.createElement('style');
+    style.innerHTML = `
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    @keyframes slideUp {
+        from {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        to {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+    }
+    `;
+    document.head.appendChild(style);
+    
+</script>
+
+</html> 
